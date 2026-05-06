@@ -273,6 +273,45 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
+    /* Timeline */
+    .timeline {
+      margin: 1.5rem 0;
+      border-left: 2px solid var(--border);
+      padding-left: 1.5rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.75rem;
+      top: 0.4rem;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .timeline-item .year {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: -apple-system, sans-serif;
+    }
+
+    .timeline-item h4 {
+      font-size: 0.92rem;
+      margin: 0.2rem 0;
+    }
+
+    .timeline-item p {
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+
     /* Mobile */
     @media (max-width: 768px) {
       nav {
@@ -313,6 +352,7 @@
 
   <div class="nav-section">Context</div>
   <ul>
+    <li><a href="#roots">Roots</a></li>
     <li><a href="#dialogue">Scholarly Dialogue</a></li>
     <li><a href="#about">About</a></li>
   </ul>
@@ -490,6 +530,49 @@
   </ul>
 </section>
 
+<section id="roots">
+  <h2>Roots</h2>
+  <p>This programme draws on twenty years of Buddhist practice and seven years of psychoanalytic training. Formalising it as a research project in 2026 does not mark a beginning — it marks the point at which the accumulated experience became method.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="year">2006</div>
+      <h4>First temple involvement</h4>
+      <p>Weekly volunteer work and study at a Buddhist temple. Sustained practice begins.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2012</div>
+      <h4>Buddhist refuge (皈依)</h4>
+      <p>Formal commitment to Buddhist practice.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2018</div>
+      <h4>First intersection</h4>
+      <p>Concordia proposal: <em>A Practice-based Study on Buddhist Psychology as a Framework for Therapeutic Game Design</em>. Joined temple psychology group — first systematic attempt to combine Buddhist psychology with another discipline. Began writing《我佛》.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2019</div>
+      <h4>Psychodynamic training begins</h4>
+      <p>Started personal analysis and psychodynamic training. Began thinking systematically about the relationship between Buddhism and psychoanalysis from inside both practices.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2021</div>
+      <h4>Early conceptual writing</h4>
+      <p>First drafts exploring Buddhism × Psychoanalysis. Continued Buddhist study alongside analytic training.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2025</div>
+      <h4>Academic grounding</h4>
+      <p>Self-elective: Buddhism vs. Psychoanalysis. CPS Substack subsection launched. Systematic restudy of the Hundred Dharmas (百法明門論).</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2026</div>
+      <h4>Programme launch</h4>
+      <p>"Clearing the Ground" paper draft completed. Buddhist app (Returning Path) prototype. Pilot coding: 贪 (rāga). Programme formally established.</p>
+    </div>
+  </div>
+</section>
+
 <section id="dialogue">
   <h2>Scholarly Dialogue</h2>
   <p>This project is in conversation with the sixty-year history of Buddhist-psychoanalytic dialogue, and seeks to extend it through systematic method and attention to the specificity of both traditions.</p>
@@ -510,9 +593,9 @@
   <p>Contact: <a href="mailto:xiaomeng.qiao.ayame9joe@gmail.com" style="color: var(--accent);">xiaomeng.qiao.ayame9joe@gmail.com</a></p>
 </section>
 
-<footer>
-  <a href="https://xiaomengicp.github.io/">&larr; Xiaomeng Qiao — Research</a><br>
-  Last updated: May 2026
+<footer style="text-align: center;">
+  <a href="https://xiaomengicp.github.io/">&larr; Back to Research Hub</a><br>
+  <span style="font-size: 0.75rem; color: #b0bec5;">Xiaomeng Qiao &middot; Buddhism &times; Psychoanalysis</span>
 </footer>
 
 </main>
